@@ -1,0 +1,61 @@
+.title {
+  text-align: center;
+}
+.table-div {
+  width: 90vw;
+  height: auto;
+  margin-top: 5vh;
+  margin-left: 3vw;
+
+  table {
+    width: 100%;
+    text-align: center;
+
+
+    .mat-header-cell {
+      font-size: 14px !important;
+    }
+
+    .edit-options {
+      i {
+        cursor: pointer;
+      }
+
+    }
+  }
+
+  .options {
+    position: relative;
+    width: 100%;
+
+    .table-buttons {
+      position: absolute;
+      margin-left: 1em;
+      margin-bottom: 0.5em;
+      vertical-align: middle;
+
+      button + button {
+        margin-left: 0.5em;
+      }
+
+      mat-icon {
+        margin-bottom: 3px;
+      }
+
+      .search-field {
+        margin-right: 1em;
+        float: right;
+        width: 15em;
+      }
+    }
+
+    .search {
+      float: right;
+      margin-right: 1em;
+
+      mat-form-field {
+        width: 14em;
+      }
+    }
+  }
+}

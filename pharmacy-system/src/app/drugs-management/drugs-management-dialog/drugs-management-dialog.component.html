@@ -1,0 +1,42 @@
+<div>
+  <mat-card class="content">
+    <h3>Dodaj novi lek</h3>
+    <mat-card-content>
+      <form [formGroup]="form">
+        <div>
+          <mat-form-field>
+            <mat-label>Naziv</mat-label>
+            <input matInput required type="text" min="0" max="100" formControlName="naziv">
+          </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field>
+            <mat-label>Opis</mat-label>
+            <input matInput required type="text" min="0" formControlName="opis">
+          </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field>
+            <mat-label>Cena</mat-label>
+            <input matInput required type="number" min="0" formControlName="cena">
+          </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field>
+            <mat-label>Tip</mat-label>
+            <input matInput required type="text" min="0" formControlName="tip">
+          </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field>
+            <mat-label>Proizvodjac</mat-label>
+            <input matInput required type="text" formControlName="proizvodjac">
+          </mat-form-field>
+        </div>
+        <div>
+          <button type="submit" mat-stroked-button color="primary" (click)="add()">Sacuvaj</button>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>
